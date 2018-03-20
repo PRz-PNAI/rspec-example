@@ -13,7 +13,11 @@ class StudentTask
   end
 
   def assign(student)
-    @student = student
+    if Student.exists? student
+      @student = student
+    else
+      raise "No such student: #{student}"
+    end
   end
 
   def assigned?
