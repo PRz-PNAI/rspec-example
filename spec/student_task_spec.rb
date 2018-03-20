@@ -3,15 +3,14 @@ require './lib/student_task.rb'
 
 describe StudentTask do
 
-  subject(:task) do
-    StudentTask.new "Bardzo trudne zadanie"
-  end
+  let(:title) { "Bardzo trudne zadanie" }
+  subject(:task) { StudentTask.new title }
 
   it { should_not be_assigned }
 
   describe "#to_s" do
     it "includes task title" do
-      expect(task.to_s).to match /Bardzo trudne zadanie/
+      expect(task.to_s).to match /#{title}/
     end
   end
 
