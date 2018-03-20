@@ -5,14 +5,19 @@ class StudentTask
   end
 
   def to_s
-    "Zadanie: #{@title}"
+    "Zadanie: #{@title}, Wykonawca: #{@student}"
   end
 
   def student
-    nil
+    @student
+  end
+
+  def assign(student)
+    @student = student
   end
 
   def assigned?
-    false
+    !@student.nil?
   end
+
 end

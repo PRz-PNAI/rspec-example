@@ -20,4 +20,27 @@ describe StudentTask do
     end
   end
 
+  context "when assigned" do
+    let(:student) { "Jan Kowalski" }
+    subject(:task) do
+      t = StudentTask.new title
+      t.assign student
+      t
+    end
+
+    it { should be_assigned }
+
+    describe "#to_s" do
+      it "returns assigned student" do
+        expect(subject.to_s).to match /#{student}/
+      end
+    end
+
+    describe "#student" do
+      it "returns assigned student" do
+        expect(subject.student).to equal student
+      end
+    end
+  end
+
 end
