@@ -7,6 +7,6 @@
 * Dobra dokumentacja RSpec'a: https://relishapp.com/rspec
 * Dodatkowe matchery, np. do walidacji: https://github.com/thoughtbot/shoulda-matchers
 * FactoryBot: https://github.com/thoughtbot/factory_bot
-  * Getting startet (w dokumentacji): http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md
+  * Getting started (w dokumentacji): http://www.rubydoc.info/gems/factory_bot/file/GETTING_STARTED.md
 * Capybara (testy integracyjne): https://github.com/teamcapybara/capybara
 * Jak pisać dobre spece (przykłady, reguły): http://www.betterspecs.org/
